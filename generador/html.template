@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <title>{{entity.name}}</title>
+  </head>
+  <body>
+    <h1>Aca va el formulario para : {{entity.name}}</h1>
+    <form class="{{entity.name}}" action="index.html" method="post">
+    {% for property in entity.properties %}
+      {% if property is entity %}
+      {{property.name}}
+      <input type="text" name={{property.type.name|capitalize}}() value="">
+      </input>
+      {% else %}
+      this.{{property.name}}
+      <input type="text" name={{property.type.name}} value="">
+      </input>
+    {% endif %}
+    <br>
+    {% endfor %}
+    <button class="btn btn-primary">guardar</button>
+
+    </form>
+
+  </body>
+</html>

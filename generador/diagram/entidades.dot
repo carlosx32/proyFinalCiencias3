@@ -1,0 +1,38 @@
+
+    digraph xtext {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+140501775530960 -> 140501775604048 [label="entities:0" arrowtail=diamond dir=both]
+140501775604048 -> 140501775604240 [label="properties:0" arrowtail=diamond dir=both]
+140501775604240 -> 140501791864912 [label="type" ]
+140501791864912[label="{cadena:SimpleType|}"]
+140501775604240[label="{nombre:Property|}"]
+140501775604048 -> 140501775604304 [label="properties:1" arrowtail=diamond dir=both]
+140501775604304 -> 140501791864912 [label="type" ]
+140501775604304[label="{apellido:Property|}"]
+140501775604048 -> 140501775604496 [label="properties:2" arrowtail=diamond dir=both]
+140501775604496 -> 140501791971536 [label="type" ]
+140501791971536[label="{caracter:SimpleType|}"]
+140501775604496[label="{identidadSexual:Property|}"]
+140501775604048[label="{Cheff:Entity|}"]
+140501775530960 -> 140501775601936 [label="entities:1" arrowtail=diamond dir=both]
+140501775601936 -> 140501775604752 [label="properties:0" arrowtail=diamond dir=both]
+140501775604752 -> 140501791889232 [label="type" ]
+140501791889232[label="{float:SimpleType|}"]
+140501775604752[label="{precio:Property|}"]
+140501775601936 -> 140501775604816 [label="properties:1" arrowtail=diamond dir=both]
+140501775604816 -> 140501775604048 [label="type" ]
+140501775604816[label="{objcheff:Property|}"]
+140501775601936[label="{Plato:Entity|}"]
+140501775530960[label="{:EntityModel|types:list=[]\l}"]
+
+}

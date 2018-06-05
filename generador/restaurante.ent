@@ -1,0 +1,9 @@
+entidad Cheff:
+  nombre -> cadena
+  apellido -> cadena
+  identidadSexual -> caracter
+
+
+entidad Plato:
+  precio -> dinero
+  objcheff -> Cheff
